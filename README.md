@@ -2,7 +2,7 @@
 
 This setup reads data from the DHT11 temperature and humidity sensor every five seconds. <br>
 Depending on the input value, the LED turns blue, green or red. <br>
-If connection with the sensor is lost, a separate <style color:red>red</style> diode turns on and the LED turns yellow.
+If connection with the sensor is lost, a separate <strong style="color:red;">red</strong> diode turns on and the LED turns yellow.
 
 This is initial testing. Future improvements might include:
 - Switching board to the Arduino MKR Wifi 1010.

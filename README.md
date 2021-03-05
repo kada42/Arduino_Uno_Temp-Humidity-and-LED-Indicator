@@ -1,6 +1,6 @@
 # Arduino_Uno_Temp-Humidity-and-LED-Indicator
 
-This setup reads data from the DHT11 temperature and humidity sensor. <br>
+This setup reads data from the DHT11 temperature and humidity sensor every five seconds. <br>
 Depending on the input value, the LED turns blue, green or red. <br>
 If connection with the sensor is lost, a separate red diode turns on and the LED turns yellow.
 

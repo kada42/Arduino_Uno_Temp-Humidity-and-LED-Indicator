@@ -1,4 +1,4 @@
-# Arduino_Uno_Temp-Humidity-and-LED-Indicator
+# Arduino Uno - Temp, Humidity and LED-indicator
 
 This setup reads data from the DHT11 temperature and humidity sensor every five seconds. <br>
 Depending on the input value, the LED turns blue, green or red. <br>

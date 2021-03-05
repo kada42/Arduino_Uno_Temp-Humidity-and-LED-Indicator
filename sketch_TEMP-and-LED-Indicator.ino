@@ -7,8 +7,6 @@ int blue_light_pin = 9;
 
 int control_pin = 13;
 
-//File csvFile = SD.open("temp.csv");
-
 //int temp = DHT.temperature;
 //int humidity = DHT.humidity;
 
@@ -24,7 +22,7 @@ void setup() {
 
 void loop() {
   int chk = DHT.read11(DHT11_PIN);
-  if (!chk == DHTLIB_OK) { // if  not OK -> turns on RED LED
+  if (!chk == DHTLIB_OK) { // if  not OK -> turns on RED Diode
     digitalWrite(control_pin, HIGH);
     RGB_color(255, 255, 0);
   } else {
@@ -39,8 +37,8 @@ void printTempAndHumid() {
   Serial.println(DHT.temperature);
   Serial.print("Humidity = ");
   Serial.println(DHT.humidity);
-  //ledControllerHumid();
-  ledControllerTemp();
+  //ledControllerHumid(); // if LED acts on humidity
+  ledControllerTemp(); // if LED acts on temperature
 }
 
 void ledControllerHumid() {
